@@ -1,0 +1,40 @@
+{
+  "name": "faster",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "scripts": {
+    "dev": "node esbuild.config.js"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@vanilla-extract/css": "^1.9.1",
+    "@vanilla-extract/esbuild-plugin": "^2.2.0",
+    "autoprefixer": "^10.4.13",
+    "esbuild": "^0.15.13",
+    "esbuild-copy-static-files": "^0.1.0",
+    "esbuild-dev-server": "^0.3.0",
+    "esbuild-plugin-inline-image": "^0.0.8",
+    "postcss": "^8.4.19"
+  }
+}
