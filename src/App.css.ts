@@ -1,16 +1,8 @@
 import { style, globalStyle } from '@vanilla-extract/css';
+import { global } from './styles/global.css';
 
+{global}
 
-// globalStyle("*",{
-
-
-//   margin:0,
-//   padding:0
-// }
-
-
-
-// )
 
 
 
@@ -19,19 +11,7 @@ import { style, globalStyle } from '@vanilla-extract/css';
 export const H1 = style({
 
   color: "orange",
-  backgroundColor:"black",
-  height:"min-content",
-  width:"min-content"
+  backgroundColor:"black"
 
 });
 
-globalStyle("*",{
-
-
-  margin:0,
-  padding:0
-}
-
-
-
-)
