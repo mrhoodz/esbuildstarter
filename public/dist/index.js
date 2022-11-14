@@ -2296,9 +2296,9 @@
           if (typeof __REACT_DEVTOOLS_GLOBAL_HOOK__ !== "undefined" && typeof __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStart === "function") {
             __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStart(new Error());
           }
-          var React3 = require_react();
+          var React4 = require_react();
           var Scheduler = require_scheduler();
-          var ReactSharedInternals = React3.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED;
+          var ReactSharedInternals = React4.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED;
           var suppressWarning = false;
           function setSuppressWarning(newSuppressWarning) {
             {
@@ -3819,7 +3819,7 @@
             {
               if (props.value == null) {
                 if (typeof props.children === "object" && props.children !== null) {
-                  React3.Children.forEach(props.children, function(child) {
+                  React4.Children.forEach(props.children, function(child) {
                     if (child == null) {
                       return;
                     }
@@ -11980,7 +11980,7 @@
             }
           }
           var fakeInternalInstance = {};
-          var emptyRefsObject = new React3.Component().refs;
+          var emptyRefsObject = new React4.Component().refs;
           var didWarnAboutStateAssignmentForComponent;
           var didWarnAboutUninitializedState;
           var didWarnAboutGetSnapshotBeforeUpdateWithoutDidUpdate;
@@ -22897,27 +22897,39 @@
   });
 
   // src/index.js
-  var import_react2 = __toESM(require_react());
+  var import_react3 = __toESM(require_react());
   var import_client = __toESM(require_client());
 
   // src/App.tsx
+  var import_react2 = __toESM(require_react());
+
+  // src/components/Layout/Navbar.tsx
   var import_react = __toESM(require_react());
 
-  // src/App.css.ts
-  var H1 = "App_H1__1iht6z0";
+  // src/styles/Layout/Navbar.css.ts
+  var Header = "Navbar_Header__pxz1oe3";
+  var navbarVE = "Navbar_navbarVE__pxz1oe2";
+
+  // src/components/Layout/Navbar.tsx
+  var Navbar = () => {
+    return /* @__PURE__ */ import_react.default.createElement("section", {
+      className: navbarVE
+    }, /* @__PURE__ */ import_react.default.createElement("h1", {
+      className: Header
+    }, "Hello container"));
+  };
+  var Navbar_default = Navbar;
 
   // src/App.tsx
   var App = () => {
-    return /* @__PURE__ */ import_react.default.createElement(import_react.default.Fragment, null, /* @__PURE__ */ import_react.default.createElement("h1", {
-      className: H1
-    }, " Lets start here"));
+    return /* @__PURE__ */ import_react2.default.createElement(import_react2.default.Fragment, null, /* @__PURE__ */ import_react2.default.createElement(Navbar_default, null));
   };
   var App_default = App;
 
   // src/index.js
   var root = import_client.default.createRoot(document.getElementById("root"));
   root.render(
-    /* @__PURE__ */ import_react2.default.createElement(import_react2.default.StrictMode, null, /* @__PURE__ */ import_react2.default.createElement(App_default, null))
+    /* @__PURE__ */ import_react3.default.createElement(import_react3.default.StrictMode, null, /* @__PURE__ */ import_react3.default.createElement(App_default, null))
   );
 })();
 /**

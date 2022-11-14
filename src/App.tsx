@@ -1,24 +1,14 @@
-import React from "react"
-import './App.css';
+import React from "react";
+import "./App.css";
 import { H1 } from "./App.css";
+import Navbar from "./components/Layout/Navbar";
 
 const App = () => {
-  
-
-
-return( 
-
-<>
-
-
-<h1 className = {H1}> Lets start here</h1>
-
-
-</>
-
- )
-
-
-}
+  return (
+    <>
+      <Navbar />
+    </>
+  );
+};
 
 export default App;

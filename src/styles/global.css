@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins";
+}
+/* 
+h1{
+  padding: 0;
+  margin: 0;
+} */
+
+@media (min-width: 336px) {
+  html {
+    font-size: 0.8px;
+    background-color: rebeccapurple;
+  }
+}
+
+@media (min-width: 800px) {
+  html {
+    font-size: 1px;
+    background-color: orange;
+  }
+}
+
+/* @media (width <= 1560px) {
+  html {
+    font-size: 1px;
+    background-color: rebeccapurple;
+  }
+} */

@@ -1,17 +1,10 @@
-import { style, globalStyle } from '@vanilla-extract/css';
-import { global } from './styles/global.css';
+import { style, globalStyle } from "@vanilla-extract/css";
+import "./styles/theme.css"
+import { vars } from "./styles/theme.css";
 
-{global}
-
-
-
-
-
+// {global}
 
 export const H1 = style({
-
-  color: "orange",
-  backgroundColor:"black"
-
+  color: vars.color.green70,
+  backgroundColor: "black",
 });
-
